@@ -1,60 +1,94 @@
-<!-- Info </-->
 <!doctype html>
 <html lang="en">
-
 <head>
-    <title> Information</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-
+   <title> Information</title>
+ <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/
+materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script>
+    $(document).ready(function(){
+    $('.slider').slider();
+  });
+    </script>
+    </head>
 <body>
+  <header>
+      
+      <!--image for the header goes here when we get it-->
+      
+    <nav>
+        <ul>
+           <li>
+               <a href="index.html">Home</a>
+                <a href="info.html" class="current">Info</a>
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html"> Contact Us</a>
+           </li> 
+        </ul>            
+    </nav>
+  </header>
+     <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="info-images/vintage-stereoscope-with-coin-drop.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is a Stereoscope from 1838.</h3>
+          <h5 class="light grey-text text-lighten-3">Developed by Charles Wheatstone.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="info-images/Virtual-boy.jpg"> <!-- random image -->
+        <div class="caption left-align"> 
+          <h3>The Virtual Boy</h3>
+          <h5 class="light grey-text text-lighten-3">Designed by Nintendo</h5>
+        </div>
+      </li>
+      <li>
+        <img src="info-images/dualshock-v2-ps4-pro-playstation-4-pro-playstation-vr-wallpaper-preview.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3 class="black-text text-lighten-3">The Playstation VR</h3>
+          <h5 class="black-text text-lighten-3">Playstations entrance into the VR field</h5>
+        </div>
+      </li>
+      <li>
+        <img src="info-images/R.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Virtual Reality</h3>
+          <h5 class="light grey-text text-lighten-3">The next ambitious adventure for video games.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="info.html" class="current">Info</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html"> Contact Us</a>
-                </li>
-            </ul>
-        </nav>
-
-        <h1> VR, the history and where it is now </h1>
-    </header>
-
-    <!--the main chunk of text-->
-    <div class="container">
-        <h3 id="historyofVR"> The History of VR </h3>
-        <p> The first known appearance of VR was seen all the way back in 1838. The basic idea was using two mirrors to project a simple image with the invention of the stereoscope. Made by Charles Wheatsone, he was the first one to try and make a supposed 3D image. During the time between the stereoscope and the official usage of the word in the mid 1980s however, scientists were still extremely busy. <a href="https://www.vrs.org.uk/virtual-reality/history.html#:~:text=In%201968%20Ivan%20Sutherland%20and%20his%20student%20Bob,was%20suspended%20from%20the%20ceiling%20%28hence%20its%20name%29.">VR technology still developed at a moderatly quick pace.</a> The next major appearance of virtual reality was during 1957, where Morton Heilig created a simulator to ride a motorcycle through New York City. This would then be further improved with the Telesphere Mask's creation, also created by the same man.
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/43mA_ypfwKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <figure>
-            <img src="../TeamSprint1-main/Images/info_images/vintage-stereoscope-with-coin-drop.jpg" class="stereoscope" alt="A stereoscope created by Charles Wheatstone-it used a coin to show you a series of images" width="40%" />
-        </figure>
-        <h3 id="PopularVR"> Popular appearances before the surge</h3>
-        <p> Virtual Reality wasn’t something that the common folk often got to lay their hands on, as most examples after the Telesphere Mask were used mostly for research institutions for <a href="https://www.nasa.gov/feature/goddard/2020/scientists-tap-virtual-reality-for-discovery">NASA.</a> But then everything changed when Nintendo joined the fray. 1995 was when Nintendo got into the VR action, creating the terribly received Nintendo Virtual Boy. It used sensors to track the eye movement, but these sensors were made from LEDs that would occasionally cause dizziness or nausea. This wasn’t exclusive to just Nintendo- most VR products at the time faced a similar difficulty. Because of these issues and an overall lack of interest in VR as a whole at the time, Virtual Reality slowly began to fall off the map. Some of the <a href="https://www.webmd.com/a-to-z-guides/virtual-reality-and-health#:~:text=The%20symptoms%20may%20feel%20like%20motion%20sickness%2C%20and,belly%207%20Getting%20disoriented%208%20Vertigo%20More%20items">medical issues</a> still remain today.
-        </p>
-
-        <figure>
-            <img src="../TeamSprint1-main/Images/info_images/Virtual-boy.jpg" class="virtualboy" alt="A Virtual Boy Console, created by Nintendo" width="25%" />
-        </figure>
-        <h3 id="VRSurge"> The surge of VR today</h3>
-        <p>Ever since the 2000s, VR has been seen more and more frequently in the modern day. Oculus Rift was the leader in this new VR surge, creating VR classes that would turn when you turned and used LCD screens to help reduce nausea. Since then, VR has been something more and more companies pursue to increase their market. Playstation created a VR software to allow players to play their games in an immersive 3D world. Many game companies that never made VR games prior also began joining in on this exciting new venture, one being Five Nights at Freddys with its new game <a href="https://www.steelwoolstudios.com/five-nights-at-freddys-help-wanted">FNAF Help Wanted.</a> But as VR grew more and more popular, the bigger tech giants began to take notice. Facebook bought Oculus for $2 billion, renaming the product to <a href="https://www.meta.com/quest/products/quest-2/?utm_source=gg&utm_medium=ps&utm_campaign=407088444&utm_term=oculus&utm_content=&utm_ad=1361197197408316&utm_location=92843&utm_location2=&utm_placement=kwd-85075930716577%3Aloc-4117&utm_device=c&utm_matchtype=e&utm_feed=&utm_adposition=&gclid=5a0d2cbddcbe1d5cc26d4f96e24795f4&gclsrc=3p.ds&msclkid=5a0d2cbddcbe1d5cc26d4f96e24795f4">"Meta"</a> and began work on a new project known as the Metaverse. Of which many have mixed feelings about.
-        </p>
-
-        <figure>
-            <img src="../TeamSprint1-main/Images/info_images/R.jpg" class="oculusplayer1" alt="A man playing the Oculus Rift" width="25%" />
-            <img src="../TeamSprint1-main/Images/info_images/dualshock-v2-ps4-pro-playstation-4-pro-playstation-vr-wallpaper-preview.jpg" class="playstation" alt="A collection of Playstation controllers and consoles, including Playstation VR" width="25%" />
-            <img src="../TeamSprint1-main/Images/info_images/pexels-photo-1806836.jpeg" class="oculusplayer2" alt="Another man playing the Oculus Rift, this one much more intently" width="25%" />
-        </figure>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qs2W2e0ls_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <footer>
-
-        &copy;2022 VR Consulting
-    </footer>
-
+   
+   <!--the main chunk of text-->
+   <h3 id="historyofVR"> The History of VR </h3>
+    <p> The first known appearance of VR was seen all the way back in 1838. The basic idea was using two mirrors to project a simple image with the invention of the stereoscope. Made by Charles Wheatsone, he was the first one to try and make a supposed 3D image. During the time between the stereoscope and the official usage of the word in the mid 1980s however, scientists were still extremely busy. <a href="https://www.vrs.org.uk/virtual-reality/history.html#:~:text=In%201968%20Ivan%20Sutherland%20and%20his%20student%20Bob,was%20suspended%20from%20the%20ceiling%20%28hence%20its%20name%29.">VR technology still developed at a moderatly quick pace.</a> The next major appearance of virtual reality was during 1957, where Morton Heilig created a simulator to ride a motorcycle through New York City. This would then be further improved with the Telesphere Mask's creation, also created by the same man.
+</p>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/43mA_ypfwKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h3 id="PopularVR"> Popular appearances before the surge</h3>
+    <p> Virtual Reality wasn’t something that the common folk often got to lay their hands on, as most examples after the Telesphere Mask were used mostly for research institutions for <a href="https://www.nasa.gov/feature/goddard/2020/scientists-tap-virtual-reality-for-discovery">NASA.</a> But then everything changed when Nintendo joined the fray. 1995 was when Nintendo got into the VR action, creating the terribly received Nintendo Virtual Boy. It used sensors to track the eye movement, but these sensors were made from LEDs that would occasionally cause dizziness or nausea. This wasn’t exclusive to just Nintendo- most VR products at the time faced a similar difficulty. Because of these issues and an overall lack of interest in VR as a whole at the time, Virtual Reality slowly began to fall off the map. Some of the <a href="https://www.webmd.com/a-to-z-guides/virtual-reality-and-health#:~:text=The%20symptoms%20may%20feel%20like%20motion%20sickness%2C%20and,belly%207%20Getting%20disoriented%208%20Vertigo%20More%20items">medical issues</a> still remain today.
+</p>
+ 
+  <h3 id="VRSurge"> The surge of VR today</h3>
+    <p>Ever since the 2000s, VR has been seen more and more frequently in the modern day. Oculus Rift was the leader in this new VR surge, creating VR classes that would turn when you turned and used LCD screens to help reduce nausea. Since then, VR has been something more and more companies pursue to increase their market. Playstation created a VR software to allow players to play their games in an immersive 3D world. Many game companies that never made VR games prior also began joining in on this exciting new venture, one being Five Nights at Freddys with its new game <a href="https://www.steelwoolstudios.com/five-nights-at-freddys-help-wanted">FNAF Help Wanted.</a> But as VR grew more and more popular, the bigger tech giants began to take notice. Facebook bought Oculus for $2 billion, renaming the product to <a href="https://www.meta.com/quest/products/quest-2/?utm_source=gg&utm_medium=ps&utm_campaign=407088444&utm_term=oculus&utm_content=&utm_ad=1361197197408316&utm_location=92843&utm_location2=&utm_placement=kwd-85075930716577%3Aloc-4117&utm_device=c&utm_matchtype=e&utm_feed=&utm_adposition=&gclid=5a0d2cbddcbe1d5cc26d4f96e24795f4&gclsrc=3p.ds&msclkid=5a0d2cbddcbe1d5cc26d4f96e24795f4">"Meta"</a> and began work on a new project known as the Metaverse. Of which many have mixed feelings about. 
+</p>
+   
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qs2W2e0ls_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+<footer>
+    
+    &copy;2022 VR Consulting
+</footer>    
+    
 </body>
