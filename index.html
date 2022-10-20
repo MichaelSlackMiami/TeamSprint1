@@ -5,67 +5,111 @@
     <meta charset="utf-8">
     <title> VR Consulting: Home </title>
     <link rel="stylesheet" href="main.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="current">Home</a>
-                    <a href="info.html">Info</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                </li>
-            </ul>
+            <div class="navbar">
+                <a href="#" data-target="mobile-demo" class="btn-floating btn-large red sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <div class="fixed-action-btn hide-on-med-and-down" style="position: absolute; bottom: auto; transform: translateX(-10px);">
+                    <a class="btn-floating btn-large red">
+                        <i class="large material-icons">menu</i>
+                    </a>
+                    <ul style="transform: translateY(-40px) translateX(90px); width: 735%;">
+                        <li><a class="button" href="index.html">Home</a></li>
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a class="btn-floating"></a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-        <!--< Title >-->
-        <h1> A Comprehensive Guide to Virtual Reality </h1>
     </header>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="button" href="index.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+
+
     <div class="container">
-        <section>
-            <p> So you want to learn about Virtual Reality? Well, you've come to the right place! </p>
+        <h1> A Comprehensive Guide to Virtual Reality </h1>
+        <p> So you want to learn about Virtual Reality? Well, you've come to the right place! </p>
 
-            <!--< Main body section >-->
-            <h2> So what even IS virtual reality? </h2>
-            <table>
-                <tr>
-                    <td>
-                        <img src="../TeamSprint1-main/Images/home_images/VRMan.jpg" alt="VR Image" width="75%">
-                        <p> "Exploring the Universe in Virtual Reality" by NASA Goddard Photo and Video is licensed under CC BY 2.0. </p>
-                    </td>
-                    <td>
-                        <p> Simply put, virtual reality is (at least in theory) the most immersive experience you can have. It's like a 3D movie on steroids, where the screen has completely surrounded you, entirely replacing the real world with a virtual one. Typically using a special headset, virtual reality offers 360 degrees of immersion. This technology held obvious appeal for entertainment, and gaming in particular. Many games already offered fully 3D enviornments, but they were restricted within a flat screen. With VR, the camera and the player's eyes could be one and the same. </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p> Like other gaming mediums, VR comes in many shapes and sizes. Cutting-edge VR headsets are available for hundreds or even thousands of dollars, or you could pick one up for $10 from your local Walmart. VR games are the same way: some were scrapped together in someone's spare time, and others are fully developed games that can go toe-to-toe with mainline console titles.
-                        </p>
-                    </td>
-                    <td>
-                        <img src="../TeamSprint1-main/Images/home_images/phone_VR.jpg" alt="Phone VR" width="75%">
-                        <p> Courtesy Anand Ram/CBC </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../TeamSprint1-main/Images/home_images/curtis_hickman.jpg" alt="Curtis Hickman" width="75%">
-                    </td>
-                    <td>
-                        <h2> "Virtual reality is all about democratizing storytelling. It gives people more control over the experience. Instead of trying to force a story upon you, we try and give you this huge playground through which you will create stories that you will then share through this medium." - Curtis Hickman, VR developer </h2>
+        <!--< Main body section >-->
+        <h2> So what even IS virtual reality? </h2>
 
-                        <p> "PAX panelists: It won't be long before people have virtual reality in their homes", GeekWire, September 7, 2016 </p>
-                    </td>
-                </tr>
-            </table>
-        </section>
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="../TeamSprint1-main/Images/home_images/VRMan.jpg" alt="VR Image" width="75%">
+                <p> "Exploring the Universe in Virtual Reality" by NASA Goddard Photo and Video is licensed under CC BY 2.0. </p>
+            </div>
+            <div class="col s12 m6">
+                <p> Simply put, virtual reality is (at least in theory) the most immersive experience you can have. It's like a 3D movie on steroids, where the screen has completely surrounded you, entirely replacing the real world with a virtual one. Typically using a special headset, virtual reality offers 360 degrees of immersion. This technology held obvious appeal for entertainment, and gaming in particular. Many games already offered fully 3D enviornments, but they were restricted within a flat screen. With VR, the camera and the player's eyes could be one and the same. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <p> Like other gaming mediums, VR comes in many shapes and sizes. Cutting-edge VR headsets are available for hundreds or even thousands of dollars, or you could pick one up for $10 from your local Walmart. VR games are the same way: some were scrapped together in someone's spare time, and others are fully developed games that can go toe-to-toe with mainline console titles.
+                </p>
+            </div>
+            <div class="col s12 m6">
+                <img src="../TeamSprint1-main/Images/home_images/phone_VR.jpg" alt="Phone VR" width="75%">
+                <p> Courtesy Anand Ram/CBC </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="../TeamSprint1-main/Images/home_images/curtis_hickman.jpg" alt="Curtis Hickman" width="75%">
+            </div>
+            <div class="col s12 m6">
+                <h2> "Virtual reality is all about democratizing storytelling. It gives people more control over the experience. Instead of trying to force a story upon you, we try and give you this huge playground through which you will create stories that you will then share through this medium." - Curtis Hickman, VR developer </h2>
+
+                <p> "PAX panelists: It won't be long before people have virtual reality in their homes", GeekWire, September 7, 2016 </p>
+            </div>
+        </div>
     </div>
 
     <footer>
         &copy; 2022 VR Consulting
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left'
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {
+                edge: "right"
+            });
+        });
+
+    </script>
 
 </body>

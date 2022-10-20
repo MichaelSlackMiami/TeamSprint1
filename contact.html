@@ -1,50 +1,152 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html><head>
     <title>VR Consulting: Contact Us</title>
     <link rel="stylesheet" href="main.css">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
 
-<body>
+<body>   
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="info.html">Info</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html" class="current">Contact Us</a>
-                </li>
-            </ul>
+        <nav>            
+            <div class="navbar">
+                <a href="#" data-target="mobile-demo" class="btn-floating btn-large red sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <div class="fixed-action-btn hide-on-med-and-down" style="position: absolute; bottom: auto; transform: translateX(-10px);">
+                    <a class="btn-floating btn-large red">
+                        <i class="large material-icons">menu</i>
+                    </a>
+                    <ul style="transform: translateY(-40px) translateX(90px); width: 735%;">
+                        <li><a class="button" href="index.html">Home</a></li>
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a class="btn-floating"></a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+    
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="button" href="index.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+        
     <div class="container">
+        <!--Google map-->
         <article>
-            <h1>Here's where we are!</h1>
+            <h2>Here's where we are!</h2>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.254178303904!2d-84.73668018430237!3d39.508752618279765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884022c4d025ec71%3A0xfce7a4ae2c12bf0f!2sMiami%20University!5e0!3m2!1sen!2sus!4v1664212691071!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.254178303904!2d-84.73668018430237!3d39.508752618279765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884022c4d025ec71%3A0xfce7a4ae2c12bf0f!2sMiami%20University!5e0!3m2!1sen!2sus!4v1664212691071!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </article>
 
-        <!--Name, Email address, Questions, Phone number maybe, google maps-->
+        <!--Name, Email address, Questions-->
         <article>
-            <h1>Have any questions? Reach out!</h1>
+            <h2>Have any questions? Reach out!</h2>
+            <div class="row">
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                    <fieldset>
+                        <form action="https://formsubmit.co/furneemd@miamioh.edu" method="POST">
+                            <label for="name" style="color: #9300ff">Your name:</label>
+                            <input type="text" name="name" id="name"><br>
+                            <label for="email" style="color: #9300ff">Email address:</label>
+                            <input type="email" name="email" id="email"><br>
+                            <label for="questions" style="color: #9300ff">Questions?</label>
+                            <textarea type="text" id="questions" rows="5"></textarea><br>
 
-            <fieldset>
-                <label for="name">Your name:</label>
-                <input type="text" name="name" id="name"><br>
-                <label for="email">Email address:</label>
-                <input type="email" name="email" id="email"><br>
-                <label for="questions">Questions?</label>
-                <textarea type="text" id="questions" rows="5"></textarea><br>
+                            <label>&nbsp;</label>
+                            <input type="submit" id="submit" value="Submit">
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </article>
+        
+        <!--Join our team!-->
+        <article>
+            <h2>Or maybe you want to join our team?</h2>
+            <div class="row">
+                <div class="col s12 m10 offset-m1">
+                    <fieldset>
+                        <form action="https://formsubmit.co/furneemd@miamioh.edu" method="POST">
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <label for="firstName" style="color: #9300ff">First name:</label>
+                                    <input type="text" name="firstName" id="firstName"><br>
+                                </div>
+                                <div class="col s12 m6">
+                                    <label for="lastName" style="color: #9300ff">Last name:</label>
+                                    <input type="text" name="lastName" id="lastName"><br>
+                                </div>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <label for="email" style="color: #9300ff">Email address:</label>
+                                    <input type="email" name="email" id="email"><br>
+                                </div>
+                                <div class="col s12 m6">
+                                    <label for="phone" style="color: #9300ff">Phone number:</label>
+                                    <input type="text" name="phone" id="phone"><br>
+                                </div>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <label for="resume" style="color: #9300ff">Upload your resume:</label>
+                                    <input type="file" name="resume" id="resume"><br>
+                                </div>
+                                <div class="col s12 m6">
+                                    <label for="hearAbout" style="color: #9300ff">How did you hear about us?</label>
+                                    <input type="textarea" name="hearAbout" id="hearAbout"><br>
+                                </div>
+                            </div>
+                        
+                            <label for="questions" style="color: #9300ff">Why do you want to work here?</label>
+                            <textarea type="text" id="questions" rows="5" style="height:50px"></textarea><br>
 
-                <label>&nbsp;</label>
-                <input type="submit" id="submit" value="Submit">
-            </fieldset>
-
+                            <label>&nbsp;</label>
+                            <input type="submit" id="submit" value="Submit">
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
         </article>
     </div>
+    
     <footer>
         &copy; 2022 VR Consulting
     </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left'
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {
+                edge: "right"
+            });
+        });
+    </script>
 </body></html>

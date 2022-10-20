@@ -1,3 +1,8 @@
+*
+{
+    font-family: sans-serif;
+}
+
 body 
 {
     text-align: center;
@@ -11,47 +16,28 @@ body
     border-right: 2px black solid;
 }
 
-fieldset 
-{
-    width: 25%;
-    margin: auto;
-}
-
 label
 {
     float: left;
     text-align: right;
-    width: 10em;
 }
 
-input[type="submit"]
-{
-    
-}
-
-nav, footer 
+.navbar, footer 
 {
     background-color: #7322ad;
-    height: 50px;
+    height: 65px;
     padding: 0px;
 }
 
-footer 
+.nav-wrapper
 {
-    padding-top: 20px;
+    background-color: aliceblue !important;
 }
 
-nav ul 
-{
-    margin: 0px;
-    padding-top: 15px;
-}
-
-nav a 
+.navbar a
 {
     margin-left: 10px;
-    text-decoration: none;
-    color: #708ff5;
+    color: #fa6a6a;
 }
 
 nav a:hover
@@ -66,6 +52,10 @@ li
 
 p
 {
-    padding: 0px 150px;
     font-size: 1.5em;
+}
+
+h3
+{
+    font-size: 1.75em;
 }

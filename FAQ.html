@@ -1,73 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>VR FAQ's</title>
     <link rel="stylesheet" href="main.css">
 
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
 
 <body>
-
-
-
     <header>
         <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="info.html">Info</a>
-                    <a href="faq.html" class="current">FAQ</a>
-                    <a href="about.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                </li>
-            </ul>
+            <div class="navbar">
+                <a href="#" data-target="mobile-demo" class="btn-floating btn-large red sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <div class="fixed-action-btn hide-on-med-and-down" style="position: absolute; bottom: auto; transform: translateX(-10px);">
+                    <a class="btn-floating btn-large red">
+                        <i class="large material-icons">menu</i>
+                    </a>
+                    <ul style="transform: translateY(-40px) translateX(90px); width: 735%;">
+                        <li><a class="button" href="index.html">Home</a></li>
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a class="btn-floating"></a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="button" href="index.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
     <div class="container">
-        <h1>FAQ's</h1>
+        <h1>FAQ</h1>
 
-        <h3>What is VR?</h3>
-        <p>VR is short for virtual reality. Virtual reality allows people to engage themselves into a completely made up environment. It usuallt involves some sort of headset or goggles that consist of a display panel for each eye and can track a person's movements.</p>
+        <ul class="collapsible popout">
+            <li class="active">
+                <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i><strong>What Is VR?</strong></div>
+                <div class="collapsible-body"><span>VR is short for virtual reality. Virtual reality allows people to engage themselves into a completely made up environment. It usuallt involves some sort of headset or goggles that consist of a display panel for each eye and can track a person's movements.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i><strong>What is the difference between VR and AR?</strong></div>
+                <div class="collapsible-body"><span>VR uses a completely virtual setting whereas AR (augmented reality) uses a real world setting. VR replaces your vision whereas AR adds to it. Many VR and AR devices have similar designs however they do completely different things.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i><strong>Does VR cause motion sickness?</strong></div>
+                <div class="collapsible-body"><span>It can. It really depends on the person. Viewing an image via VR sends your brain the same visual signals it would if you were seeing something that was actually moving. If you are someone who is susceptable to motion sickness on a rollercoaster in real life, it is possible that you will also feel motion sick when riding a rollercoaster virtually.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i><strong>Are there different types of VR?</strong></div>
+                <div class="collapsible-body"><span>Yes!<br><br>
 
-        <h3>What is the difference between VR and AR?</h3>
-        <p>VR uses a completely virtual setting whereas AR (augmented reality) uses a real world setting. VR replaces your vision whereas AR adds to it. Many VR and AR devices have similar designs however they do completely different things.</p>
+                        <b>Standalone VR -</b> Any headset that works entirely by istelf without using any other equipment or technology.<br><br>
 
-        <h3>Does VR cause motion sickness?</h3>
-        <p>It can. It really depends on the person. Viewing an image via VR sends your brain the same visual signals it would if you were seeing something that was actually moving. If you are someone who is susceptable to motion sickness on a rollercoaster in real life, it is possible that you will also feel motion sick when riding a rollercoaster virtually. </p>
+                        <b>PC VR -</b> Any headset that works only while being connected to a nearby PC.<br><br>
 
-        <h3>Are there different types of VR?</h3>
-        <p>Yes!<br><br>
+                        <b>Console VR -</b> Currently only consists of two headsets: PlayStation VR and Nintendo Labo VR for the Nintendo Switch. Both are additional purchaces you need to make in addition to your Playstation/Nintendo Switch.<br><br></span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i><strong>What VR terminology should I know?</strong></div>
+                <div class="collapsible-body"><span>According to <a href="https://libguides.bodleian.ox.ac.uk/vr/faq">Bodleian Libraries</a>, these are 6 virtual reality terms that are helpful to know. <br><br>
 
-            <b>Standalone VR -</b> Any headset that works entirely by istelf without using any other equipment or technology.<br><br>
+                        <b>VR -</b> Virtual Reality <br><br>
 
-            <b>PC VR -</b> Any headset that works only while being connected to a nearby PC.<br><br>
+                        <b>HMD -</b>Head Mounted Display <br><br>
 
-            <b>Console VR -</b> Currently only consists of two headsets: PlayStation VR and Nintendo Labo VR for the Nintendo Switch. Both are additional purchaces you need to make in addition to your Playstation/Nintendo Switch.<br><br>
+                        <b>Latency -</b> Latency in VR refers to the time it takes for the computer to render an image and for that image to appear on the HMD. This needs to be as low as possible so when you turn your head quickly the image displayed will be at the same speed. If it's too slow then the image lags behind your movement and it can make you feel sick. <br><br>
+
+                        <b>OLED -</b> Organic Light-Emitting Diode. This refers to the display technology used for the screens. <br><br>
+
+                        <b>IPD -</b> Interpupillary distance (IPD) is the distance between the center of the pupils of the two eyes. IPD is critical for the design of binocular viewing systems, where both eyepupils need to be positioned within the exit pupils of the viewing system. If your IPD isn't set correctly it can create eye strain. <br><br>
+
+                        <b> Frame Rate/FPS -</b> Frames Per Second. The frequency at which frames in a television picture, film, or video sequence are displayed. For VR, the optimal frame rate recommend by Oculus and HTC is 90fps. As a comparison, film and TV run at 24fps. <br><br>
+                    </span></div>
+            </li>
+        </ul>
 
 
-        </p>
 
-        <h3>What VR terminology should I know?</h3>
-        <p> According to https://libguides.bodleian.ox.ac.uk/vr/faq, these are 6 virtual reality terms that are helpful to know. <br><br>
 
-            <b>VR -</b> Virtual Reality <br><br>
 
-            <b>HMD -</b>Head Mounted Display <br><br>
-
-            <b>Latency -</b> Latency in VR refers to the time it takes for the computer to render an image and for that image to appear on the HMD. This needs to be as low as possible so when you turn your head quickly the image displayed will be at the same speed. If it's too slow then the image lags behind your movement and it can make you feel sick. <br><br>
-
-            <b>OLED -</b> Organic Light-Emitting Diode. This refers to the display technology used for the screens. <br><br>
-
-            <b>IPD -</b> Interpupillary distance (IPD) is the distance between the center of the pupils of the two eyes. IPD is critical for the design of binocular viewing systems, where both eyepupils need to be positioned within the exit pupils of the viewing system. If your IPD isn't set correctly it can create eye strain. <br><br>
-
-            <b> Frame Rate/FPS -</b> Frames Per Second. The frequency at which frames in a television picture, film, or video sequence are displayed. For VR, the optimal frame rate recommend by Oculus and HTC is 90fps. As a comparison, film and TV run at 24fps. <br><br>
-
-        </p>
     </div>
     <footer>
         &copy; 2022 VR Consulting
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left'
+            });
+        });
 
-</body></html>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {
+                edge: "right"
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+
+    </script>
+
+</body>
+
+</html>
