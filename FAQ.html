@@ -4,7 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>VR FAQ's</title>
     <link rel="stylesheet" href="main.css">
-   
+
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -18,65 +19,51 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    
-    <script>
-		 function toggle() {
-   			if(this.getAttribute("class") == "plus") {
-      			this.setAttribute("class", "minus"); 
-			}
-   			else {this.setAttribute("class", "plus");
-			}
-			
-			//show and hide the answer part
-			
-			if(this.nextElementSibling.getAttribute("class")=="closed"){
-      			this.nextElementSibling.setAttribute("class", "open");
-			}
-   			else{this.nextElementSibling.setAttribute("class", "closed");
-			}
-		}
-		
-		window.onload = function() {
-			let h4s = document.getElementById("faqs").getElementsByTagName("h4");
-			// h4s = [h4, h4, h4]
-			 for(i=0; i<h4s.length;i++) {
-				   h4s[i].onclick = toggle;
-			 }
-		}
-    
-    </script>
-    
-    <style>
-	
-		div.closed {
-			display: none;
-		}
 
-		div.open {
-			display: block;
-		}
-		
-		h4 {
-			font-weight: normal;
-			text-align: center;
-		}
-	
-		p {
-			font-weight: lighter;
-			display: inline-block;
-			width: 45%;
-			padding-left: 2%;
-			text-align: left;
-		}
-		
-	</style>
-  
+    <script>
+        function toggle() {
+            if (this.getAttribute("class") == "plus") {
+                this.setAttribute("class", "minus");
+            } else {
+                this.setAttribute("class", "plus");
+            }
+
+            //show and hide the answer part
+
+            if (this.nextElementSibling.getAttribute("class") == "closed") {
+                this.nextElementSibling.setAttribute("class", "open");
+            } else {
+                this.nextElementSibling.setAttribute("class", "closed");
+            }
+        }
+
+        window.onload = function() {
+            let h4s = document.getElementById("faqs").getElementsByTagName("h4");
+            // h4s = [h4, h4, h4]
+            for (i = 0; i < h4s.length; i++) {
+                h4s[i].onclick = toggle;
+            }
+        }
+
+    </script>
+
+    <style>
+        div.closed {
+            display: none;
+        }
+
+        div.open {
+            display: block;
+        }
+
+        h4 {
+            font-weight: normal;
+            text-align: center;
+        }
+    </style>
 </head>
 
-
-
 <body>
-   
     <header>
         <nav>
             <div class="navbar">
@@ -97,7 +84,7 @@
             </div>
         </nav>
     </header>
-   
+
     <ul class="sidenav" id="mobile-demo">
         <li><a class="button" href="index.html">Home</a></li>
         <li><a href="info.html">Info</a></li>
@@ -105,62 +92,63 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
     </ul>
-       
-    <h1> &nbsp; FAQ's</h1>
-        
-    <div id="faqs">
-		<h4 class="plus"><i class="material-icons small">arrow_drop_down</i>What Is VR?</h4>
-		<div class="closed" >
-			<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			VR is short for virtual reality. Virtual reality allows people to engage themselves into a completely made up environment. It usually involves some sort of headset or goggles that consist of a display panel for each eye and can track a person's movements.
-			</p>
-		</div>
-		<h4 class="plus"><i class="material-icons small">arrow_drop_down</i>What is the difference between VR and AR?</h4>
-		<div class="closed">
-			<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			VR uses a completely virtual setting whereas AR (augmented reality) uses a real world setting. VR replaces your vision whereas AR adds to it. Many VR and AR devices have similar designs however they do completely different things.</p>
-		</div>
-		<h4 class="plus"><i class="material-icons small">arrow_drop_down</i>Does VR cause motion sickness?</h4>
-		<div class="closed">
-			<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			It can. It really depends on the person. Viewing an image via VR sends your brain the same visual signals it would if you were seeing something that was actually moving. If you are someone who is susceptable to motion sickness on a rollercoaster in real life, it is possible that you will also feel motion sick when riding a rollercoaster virtually.
-			</p>
-		</div>
-		<h4 class="plus"><i class="material-icons small">arrow_drop_down</i>Are there different types of VR?</h4>
-		<div class="closed">
-			<p> Yes!<br><br>
-				<b>Standalone VR:</b><br>
-            	Any headset that works entirely by istelf without using any other equipment or technology.<br><br> 
-				<b>PC VR:</b><br>
-             	Any headset that works only while being connected to a nearby PC.<br><br>  
-				<b>Console VR:</b><br>
-    			Currently only consists of two headsets: PlayStation VR and Nintendo Labo VR for the Nintendo Switch. Both are additional purchaces you need to make in addition to your Playstation/Nintendo Switch.<br>
-			</p>
-		</div>
-		<h4 class="plus"><i class="material-icons small">arrow_drop_down</i>What VR terminology should I know?</h4>
-		<div class="closed">
-			<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           	According to <a href="https://libguides.bodleian.ox.ac.uk/vr/faq">Bodleian Libraries</a>, these are 6 virtual reality terms that are helpful to know. <br><br> 
-			<b>VR:</b><br>
-          	Virtual Reality <br><br> 
-			<b>HMD:</b><br>
-           	Head Mounted Display <br><br>
-			<b>Latency:</b><br> 
-			Latency in VR refers to the time it takes for the computer to render an image and for that image to appear on the HMD. This needs to be as low as possible so when you turn your head quickly the image displayed will be at the same speed. If it's too slow then the image lags behind your movement and it can make you feel sick. <br><br> 
-			<b>OLED:</b><br>
-			Organic Light-Emitting Diode. This refers to the display technology used for the screens. <br><br>
-			<b>IPD:</b><br>
-			Interpupillary distance (IPD) is the distance between the center of the pupils of the two eyes. IPD is critical for the design of binocular viewing systems, where both eyepupils need to be positioned within the exit pupils of the viewing system. If your IPD isn't set correctly it can create eye strain. <br><br> 
-			<b> Frame Rate/FPS:</b><br> Frames Per Second. The frequency at which frames in a television picture, film, or video sequence are displayed. For VR, the optimal frame rate recommend by Oculus and HTC is 90fps. As a comparison, film and TV run at 24fps. <br><br>
-			</p>
-		</div>
-	</div>
-	
-    <br><br><br><br><br><br><br><br><br><br><br><br><br> 
-        
-       
-    <footer>
-        &copy; 2022 VR Consulting
+
+    <div class="container">
+        <h1>FAQ</h1>
+
+        <div id="faqs">
+            <h4 class="plus"><i class="material-icons small">arrow_drop_down</i>What Is VR?</h4>
+            <div class="closed">
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    VR is short for virtual reality. Virtual reality allows people to engage themselves into a completely made up environment. It usually involves some sort of headset or goggles that consist of a display panel for each eye and can track a person's movements.
+                </p>
+            </div>
+            <h4 class="plus"><i class="material-icons small">arrow_drop_down</i>What is the difference between VR and AR?</h4>
+            <div class="closed">
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    VR uses a completely virtual setting whereas AR (augmented reality) uses a real world setting. VR replaces your vision whereas AR adds to it. Many VR and AR devices have similar designs however they do completely different things.</p>
+            </div>
+            <h4 class="plus"><i class="material-icons small">arrow_drop_down</i>Does VR cause motion sickness?</h4>
+            <div class="closed">
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    It can. It really depends on the person. Viewing an image via VR sends your brain the same visual signals it would if you were seeing something that was actually moving. If you are someone who is susceptable to motion sickness on a rollercoaster in real life, it is possible that you will also feel motion sick when riding a rollercoaster virtually.
+                </p>
+            </div>
+            <h4 class="plus"><i class="material-icons small">arrow_drop_down</i>Are there different types of VR?</h4>
+            <div class="closed">
+                <p> Yes!<br><br>
+                    <b>Standalone VR:</b><br>
+                    Any headset that works entirely by istelf without using any other equipment or technology.<br><br>
+                    <b>PC VR:</b><br>
+                    Any headset that works only while being connected to a nearby PC.<br><br>
+                    <b>Console VR:</b><br>
+                    Currently only consists of two headsets: PlayStation VR and Nintendo Labo VR for the Nintendo Switch. Both are additional purchaces you need to make in addition to your Playstation/Nintendo Switch.<br>
+                </p>
+            </div>
+            <h4 class="plus"><i class="material-icons small">arrow_drop_down</i>What VR terminology should I know?</h4>
+            <div class="closed">
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    According to <a href="https://libguides.bodleian.ox.ac.uk/vr/faq">Bodleian Libraries</a>, these are 6 virtual reality terms that are helpful to know. <br><br>
+                    <b>VR:</b><br>
+                    Virtual Reality <br><br>
+                    <b>HMD:</b><br>
+                    Head Mounted Display <br><br>
+                    <b>Latency:</b><br>
+                    Latency in VR refers to the time it takes for the computer to render an image and for that image to appear on the HMD. This needs to be as low as possible so when you turn your head quickly the image displayed will be at the same speed. If it's too slow then the image lags behind your movement and it can make you feel sick. <br><br>
+                    <b>OLED:</b><br>
+                    Organic Light-Emitting Diode. This refers to the display technology used for the screens. <br><br>
+                    <b>IPD:</b><br>
+                    Interpupillary distance (IPD) is the distance between the center of the pupils of the two eyes. IPD is critical for the design of binocular viewing systems, where both eyepupils need to be positioned within the exit pupils of the viewing system. If your IPD isn't set correctly it can create eye strain. <br><br>
+                    <b> Frame Rate/FPS:</b><br> Frames Per Second. The frequency at which frames in a television picture, film, or video sequence are displayed. For VR, the optimal frame rate recommend by Oculus and HTC is 90fps. As a comparison, film and TV run at 24fps. <br><br>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <footer class="valign-wrapper">
+        <h5 style="color: #fa6a6a;">&copy; 2022 VR Consulting</h5>
     </footer>
 
     <script>
@@ -177,7 +165,7 @@
                 edge: "right"
             });
         });
-        
+
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.collapsible');
             var instances = M.Collapsible.init(elems);

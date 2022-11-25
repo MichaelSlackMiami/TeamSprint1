@@ -19,6 +19,116 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        function calculateHeadset() {
+            let price = parseInt(document.getElementById("price").value);
+            let quality = document.getElementById("quality").value;
+            let age = parseInt(document.getElementById("age").value);
+
+            let vrImage = document.getElementById("vrImage");
+            let vrText = document.getElementById("vrText");
+
+            //This algorithm is a little more complex than any of us can do. We did our best though!
+            if (age < 2015) {
+                alert("Sorry, we don't have any headsets made before 2015.");
+            } else if (age >= 2015 && age <= 2017) {
+                if (quality == "High" || price >= 100) {
+                    vrImage.style.display = "block";
+                    vrImage.src = "Images/vr_images/playstationVR.jpg";
+                    vrText.innerHTML = "This Playstation VR headset is $100 and was released in 2016. It is relatively high quality, but requires a playstation 4 or 5 to work.";
+                } else if (quality == "Medium" || (price < 100 && price > 30)) {
+                    vrImage.style.display = "block";
+                    vrImage.src = "Images/vr_images/googleDaydream.jpg";
+                    vrText.innerHTML = "This Google Daydream vr headset is around $30 and was made in 2017. It is middle quality, and requires a compatible phone to work.";
+                } else if (quality == "Low" || (price < 30 && price > 8)) {
+                    vrImage.style.display = "block";
+                    vrImage.src = "Images/vr_images/cardboardVR.jpg";
+                    vrText.innerHTML = "This is cardboard in the shape of a headset. It is only around $10 and requires a phone, but is a very cheap way to experience VR.";
+                } else {
+                    alert("Sorry, we don't have any headsets in this year that fit the requirements.");
+                }
+            } else if (age == 2020) {
+                if (quality == "Low" || (price >= 300 && price < 400)) {
+                    vrImage.style.display = "block";
+                    vrImage.src = "Images/vr_images/hpReverb.jpg";
+                    vrText.innerHTML = "This HP Reverb headset is around $300. It is fairly high quality, but requires a PC to work.";
+                } else if (quality == "Medium" || price >= 400) {
+                    vrImage.style.display = "block";
+                    vrImage.src = "Images/vr_images/metaQuest.jpg";
+                    vrText.innerHTML = "The Meta Quest is around $400, and is pretty high quality. It does not require anything else to work.";
+                } else if (quality == "High") {
+                    if (price >= 2000 && price < 6500) {
+                        vrImage.style.display = "block";
+                        vrImage.src = "Images/vr_images/varjoAero.jpg";
+                        vrText.innerHTML = "This Varjo Aero is a very high price vr headset that sells for around $2000. It is standalone, and is very high quality.";
+                    } else if (price >= 6500) {
+                        vrImage.style.display = "block";
+                        vrImage.src = "Images/vr_images/varjoXR3.jpg";
+                        vrText.innerHTML = "This Varjo XR-3 headset is the best of the best. It is around $6500. It doesn't need anything else to work, and has cameras on the outside to see your surroundings while using it.";
+                    } else {
+                        alert("Sorry, we don't have any headsets within that price range.");
+                    }
+                } else {
+                    alert("Sorry, we don't have any headsets in this year that fit the requirements.");
+                }
+            } else if (age == 2021) {
+                if ((quality == "Medium" || quality == "Low") || (price >= 800 && price < 1500)) {
+                    vrImage.style.display = "block";
+                    vrImage.src = "Images/vr_images/HTCVivePro2.jpg";
+                    vrText.innerHTML = "The HTC Vive Pro 2 is a fairly high quality vr headset that requires a pc. It sells for around $800.";
+                } else if (quality == "High" || price >= 1500) {
+                    vrImage.style.display = "block";
+                    vrImage.src = "Images/vr_images/HTCViveFocus3.jpg";
+                    vrText.innerHTML = "The HTC Vive Focus 3 is pretty high quality. It needs nothing else to run and sells for around $1500.";
+                } else {
+                    alert("Sorry, we don't have any headsets in this year that fit the requirements.");
+                }
+            } else if (age == 2022) {
+                if (price >= 1500) {
+                    vrImage.style.display = "block";
+                    vrImage.src = "Images/vr_images/metaQuestPro.jpg";
+                    vrText.innerHTML = "The Meta Quest Pro is very high quality, and needs nothing else to run. It sells for around $1500.";
+                } else {
+                    alert("Sorry, we don't have any headsets in this year that fit the requirements.");
+                }
+            } else {
+                alert("Sorry, we don't have any headsets in this year.");
+            }
+        }
+
+    </script>
+
+    <style>
+        #vrImage {
+            text-align: center;
+            width: 800px;
+            height: 600px;
+            display: block;
+            margin: auto;
+        }
+
+        @media (max-width: 750px) {
+            #vrImage {
+                text-align: center;
+                width: 300px;
+                height: 250px;
+                display: block;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 1500px) and (min-width: 751px) {
+            #vrImage {
+                text-align: center;
+                width: 550px;
+                height: 400px;
+                display: block;
+                margin: auto;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -32,7 +142,9 @@
                     </a>
                     <ul style="transform: translateY(-40px) translateX(90px); width: 735%;">
                         <li><a class="button" href="index.html">Home</a></li>
-                        <li><a href="info.html">Info</a></li>
+                        <li>
+                            <a href="info.html">Info</a>
+                        </li>
                         <li><a href="FAQ.html">FAQ</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
@@ -51,8 +163,6 @@
         <li><a href="contact.html">Contact Us</a></li>
     </ul>
 
-
-
     <div class="container">
         <h1> A Comprehensive Guide to Virtual Reality </h1>
         <p> So you want to learn about Virtual Reality? Well, you've come to the right place! </p>
@@ -62,7 +172,7 @@
 
         <div class="row">
             <div class="col s12 m6">
-                <img src="../TeamSprint1-main/Images/home_images/VRMan.jpg" alt="VR Image" width="75%">
+                <img src="Images/home_images/VRMan.jpg" alt="VR Image" width="75%">
                 <p> "Exploring the Universe in Virtual Reality" by NASA Goddard Photo and Video is licensed under CC BY 2.0. </p>
             </div>
             <div class="col s12 m6">
@@ -75,24 +185,56 @@
                 </p>
             </div>
             <div class="col s12 m6">
-                <img src="../TeamSprint1-main/Images/home_images/phone_VR.jpg" alt="Phone VR" width="75%">
+                <img src="Images/home_images/phone_VR.jpg" alt="Phone VR" width="75%">
                 <p> Courtesy Anand Ram/CBC </p>
             </div>
         </div>
         <div class="row">
             <div class="col s12 m6">
-                <img src="../TeamSprint1-main/Images/home_images/curtis_hickman.jpg" alt="Curtis Hickman" width="75%">
+                <img src="Images/home_images/curtis_hickman.jpg" alt="Curtis Hickman" width="75%">
             </div>
             <div class="col s12 m6">
-                <h2> "Virtual reality is all about democratizing storytelling. It gives people more control over the experience. Instead of trying to force a story upon you, we try and give you this huge playground through which you will create stories that you will then share through this medium." - Curtis Hickman, VR developer </h2>
+                <blockquote style="font-size: 25px;"> "Virtual reality is all about democratizing storytelling. It gives people more control over the experience. Instead of trying to force a story upon you, we try and give you this huge playground through which you will create stories that you will then share through this medium." - Curtis Hickman, VR developer </blockquote>
 
                 <p> "PAX panelists: It won't be long before people have virtual reality in their homes", GeekWire, September 7, 2016 </p>
             </div>
         </div>
+
+        <div class="container" style="border: none;">
+            <form style="border: 1px black solid; padding: 20px;">
+                <label for="price" style="color: #9300ff">Maximum price:</label>
+                <input type="text" id="price" name="price">
+
+                <br>
+                <br>
+
+                <label for="quality" style="color: #9300ff">Choose quality level:</label>
+                <select name="quality" id="quality">
+                    <option value="default" disabled selected></option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <br>
+
+                <label for="age" style="color: #9300ff">Choose a year of release:</label>
+                <input type="text" id="age" name="age">
+
+                <label>&nbsp;</label>
+                <input type="button" id="calculate" value="Calculate" onclick="calculateHeadset()">
+            </form>
+
+            <br>
+
+            <img src="" style="display: none; text-align: center;" id="vrImage">
+
+            <p id="vrText"></p>
+        </div>
     </div>
 
-    <footer>
-        &copy; 2022 VR Consulting
+    <footer class="valign-wrapper">
+        <h5 style="color: #fa6a6a;">&copy; 2022 VR Consulting</h5>
     </footer>
 
     <script>
@@ -110,6 +252,10 @@
             });
         });
 
-    </script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
 
+    </script>
 </body>

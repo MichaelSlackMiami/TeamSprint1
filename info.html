@@ -1,105 +1,154 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-   <title> Information</title>
- <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-      
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/
-materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <script>
-    $(document).ready(function(){
-    $('.slider').slider();
-  });
+    <title> Information</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <script>
+        window.onload = function()
+        {
+            let slideShow = document.getElementById("slideshow").getElementsByTagName("a");
+            
+            let i = 0;
+            let timer = setInterval(function()
+            {
+                i = (i + 1) % slideShow.length;
+                
+                document.getElementById("slideshowImage").src = slideShow[i].href;
+                
+                document.getElementById("slideshowCaption").innerHTML = slideShow[i].title;
+            }, 3000);
+        }
     </script>
     
     <style>
-        #image {
-            width: 250px;
-            height: 250px;
+        #slideshowImage
+        {
+            width: 1000px;
+            height: 600px;
         }
         
-        h1, h2, h3, p, a, iframe {
-            text-align: center;
-        }        
-    
-    </style>
-    
-    
-    <script>
-    window.onload = function() {
-    
-    let slideshow = document.getElementById("image_list").getElementsByTagName("a");
-    //slideshow = [a,a,a,a,a]
-    
-    let i=0;
-    let timer = setInterval(function() {
-        i = (i +1) % slideshow.length;
-        document.getElementById("image").src = slideshow[i].href;
-        document.getElementById("caption").innerHTML = slideshow[i].title;
+        @media (max-width: 750px)
+        {
+            #slideshowImage
+            {
+                width: 400px;
+                height: 250px;
+            }
+        }
         
-    }, 3000)
-}
-    </script>
-    </head>
+        @media (max-width: 1500px) and (min-width: 751px)
+        {
+            #slideshowImage
+            {
+                width: 650px;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
 <body>
-  <header>
-      
-      <!--image for the header goes here when we get it-->
-      
-    <nav>
-        <ul>
-           <li>
-               <a href="index.html">Home</a>
-                <a href="info.html" class="current">Info</a>
-                <a href="faq.html">FAQ</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html"> Contact Us</a>
-           </li> 
-        </ul>            
-    </nav>
-  </header>
-   <section class="main">
-    <h1>VR Images</h1>
-    <ul id="image_list">
-        <li><a href="info-images/dualshock-v2-ps4-pro-playstation-4-pro-playstation-vr-wallpaper-preview.jpg" title="Playstation VR"></a></li>
-        <li><a href="info-images/pexels-photo-1806836.jpeg" title="Someone playing VR aggressivly"></a></li>
-        <li><a href="info-images/R.jpg" title="Someone else playing VR" width="400"></a></li>
-        <li><a href="info-images/vintage-stereoscope-with-coin-drop.jpg" title="A Stereoscope"></a></li>
-        <li><a href="info-images/Virtual-boy.jpg" title="The Virtual Boy"></a></li>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="#" data-target="mobile-demo" class="btn-floating btn-large red sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <div class="fixed-action-btn hide-on-med-and-down" style="position: absolute; bottom: auto; transform: translateX(-10px);">
+                    <a class="btn-floating btn-large red">
+                        <i class="large material-icons">menu</i>
+                    </a>
+                    <ul style="transform: translateY(-40px) translateX(90px); width: 735%;">
+                        <li><a class="button" href="index.html">Home</a></li>
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a class="btn-floating"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="button" href="index.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
     </ul>
-    <h2 id="caption">Playstation VR</h2>
-    <p>
-    	<img src="info-images/dualshock-v2-ps4-pro-playstation-4-pro-playstation-vr-wallpaper-preview.jpg" alt="" id="image">
-    </p>
-</section>
-  
-   <!--the main chunk of text-->
-   <h3 id="historyofVR"> The History of VR </h3>
-    <p> The first known appearance of VR was seen all the way back in 1838. The basic idea was using two mirrors to project a simple image with the invention of the stereoscope. Made by Charles Wheatsone, he was the first one to try and make a supposed 3D image. During the time between the stereoscope and the official usage of the word in the mid 1980s however, scientists were still extremely busy. <a href="https://www.vrs.org.uk/virtual-reality/history.html#:~:text=In%201968%20Ivan%20Sutherland%20and%20his%20student%20Bob,was%20suspended%20from%20the%20ceiling%20%28hence%20its%20name%29.">VR technology still developed at a moderatly quick pace.</a> The next major appearance of virtual reality was during 1957, where Morton Heilig created a simulator to ride a motorcycle through New York City. This would then be further improved with the Telesphere Mask's creation, also created by the same man.
-</p>
- <iframe width="560" height="315" src="https://www.youtube.com/embed/43mA_ypfwKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- 
-  <h3 id="PopularVR"> Popular appearances before the surge</h3>
-    <p> Virtual Reality wasn’t something that the common folk often got to lay their hands on, as most examples after the Telesphere Mask were used mostly for research institutions for <a href="https://www.nasa.gov/feature/goddard/2020/scientists-tap-virtual-reality-for-discovery">NASA.</a> But then everything changed when Nintendo joined the fray. 1995 was when Nintendo got into the VR action, creating the terribly received Nintendo Virtual Boy. It used sensors to track the eye movement, but these sensors were made from LEDs that would occasionally cause dizziness or nausea. This wasn’t exclusive to just Nintendo- most VR products at the time faced a similar difficulty. Because of these issues and an overall lack of interest in VR as a whole at the time, Virtual Reality slowly began to fall off the map. Some of the <a href="https://www.webmd.com/a-to-z-guides/virtual-reality-and-health#:~:text=The%20symptoms%20may%20feel%20like%20motion%20sickness%2C%20and,belly%207%20Getting%20disoriented%208%20Vertigo%20More%20items">medical issues</a> still remain today.
-</p>
- 
-  <h3 id="VRSurge"> The surge of VR today</h3>
-    <p>Ever since the 2000s, VR has been seen more and more frequently in the modern day. Oculus Rift was the leader in this new VR surge, creating VR classes that would turn when you turned and used LCD screens to help reduce nausea. Since then, VR has been something more and more companies pursue to increase their market. Playstation created a VR software to allow players to play their games in an immersive 3D world. Many game companies that never made VR games prior also began joining in on this exciting new venture, one being Five Nights at Freddys with its new game <a href="https://www.steelwoolstudios.com/five-nights-at-freddys-help-wanted">FNAF Help Wanted.</a> But as VR grew more and more popular, the bigger tech giants began to take notice. Facebook bought Oculus for $2 billion, renaming the product to <a href="https://www.meta.com/quest/products/quest-2/?utm_source=gg&utm_medium=ps&utm_campaign=407088444&utm_term=oculus&utm_content=&utm_ad=1361197197408316&utm_location=92843&utm_location2=&utm_placement=kwd-85075930716577%3Aloc-4117&utm_device=c&utm_matchtype=e&utm_feed=&utm_adposition=&gclid=5a0d2cbddcbe1d5cc26d4f96e24795f4&gclsrc=3p.ds&msclkid=5a0d2cbddcbe1d5cc26d4f96e24795f4">"Meta"</a> and began work on a new project known as the Metaverse. Of which many have mixed feelings about. 
-</p>
-   
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qs2W2e0ls_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
-<footer>
-    
-    &copy;2022 VR Consulting
-</footer>    
-    
+    <div class="container">
+       <h1 id="historyofVR"> The History of VR </h1>
+        
+        <ul id="slideshow">
+            <li><a href="Images/info_images/vintage-stereoscope-with-coin-drop.jpg" title="A Stereoscope"></a></li>
+            <li><a href="Images/info_images/Virtual-boy.jpg" title="The Virtual Boy"></a></li>
+            <li><a href="Images/info_images/dualshock-v2-ps4-pro-playstation-4-pro-playstation-vr-wallpaper-preview.jpg" title="Playstation VR"></a></li>
+            <li><a href="Images/info_images/pexels-photo-1806836.jpeg" title="Someone playing VR aggressivly"></a></li>
+            <li><a href="Images/info_images/R.jpg" title="Someone else playing VR"></a></li>
+        </ul>
+        <p>
+            <img src="Images/info_images/vintage-stereoscope-with-coin-drop.jpg" id="slideshowImage">
+        </p>
+        <h3 id="slideshowCaption">A Stereoscope</h3>
+
+        <!--the main chunk of text-->
+        <p> The first known appearance of VR was seen all the way back in 1838. The basic idea was using two mirrors to project a simple image with the invention of the stereoscope. Made by Charles Wheatsone, he was the first one to try and make a supposed 3D image. During the time between the stereoscope and the official usage of the word in the mid 1980s however, scientists were still extremely busy. <a href="https://www.vrs.org.uk/virtual-reality/history.html#:~:text=In%201968%20Ivan%20Sutherland%20and%20his%20student%20Bob,was%20suspended%20from%20the%20ceiling%20%28hence%20its%20name%29.">VR technology still developed at a moderatly quick pace.</a> The next major appearance of virtual reality was during 1957, where Morton Heilig created a simulator to ride a motorcycle through New York City. This would then be further improved with the Telesphere Mask's creation, also created by the same man.
+        </p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/43mA_ypfwKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 550px; max-height: 312;"></iframe>
+        <h3 id="PopularVR"> Popular appearances before the surge</h3>
+        <p> Virtual Reality wasn’t something that the common folk often got to lay their hands on, as most examples after the Telesphere Mask were used mostly for research institutions for <a href="https://www.nasa.gov/feature/goddard/2020/scientists-tap-virtual-reality-for-discovery">NASA.</a> But then everything changed when Nintendo joined the fray. 1995 was when Nintendo got into the VR action, creating the terribly received Nintendo Virtual Boy. It used sensors to track the eye movement, but these sensors were made from LEDs that would occasionally cause dizziness or nausea. This wasn’t exclusive to just Nintendo- most VR products at the time faced a similar difficulty. Because of these issues and an overall lack of interest in VR as a whole at the time, Virtual Reality slowly began to fall off the map. Some of the <a href="https://www.webmd.com/a-to-z-guides/virtual-reality-and-health#:~:text=The%20symptoms%20may%20feel%20like%20motion%20sickness%2C%20and,belly%207%20Getting%20disoriented%208%20Vertigo%20More%20items">medical issues</a> still remain today.
+        </p>
+
+        <h3 id="VRSurge"> The surge of VR today</h3>
+        <p>Ever since the 2000s, VR has been seen more and more frequently in the modern day. Oculus Rift was the leader in this new VR surge, creating VR classes that would turn when you turned and used LCD screens to help reduce nausea. Since then, VR has been something more and more companies pursue to increase their market. Playstation created a VR software to allow players to play their games in an immersive 3D world. Many game companies that never made VR games prior also began joining in on this exciting new venture, one being Five Nights at Freddys with its new game <a href="https://www.steelwoolstudios.com/five-nights-at-freddys-help-wanted">FNAF Help Wanted.</a> But as VR grew more and more popular, the bigger tech giants began to take notice. Facebook bought Oculus for $2 billion, renaming the product to <a href="https://www.meta.com/quest/products/quest-2/?utm_source=gg&utm_medium=ps&utm_campaign=407088444&utm_term=oculus&utm_content=&utm_ad=1361197197408316&utm_location=92843&utm_location2=&utm_placement=kwd-85075930716577%3Aloc-4117&utm_device=c&utm_matchtype=e&utm_feed=&utm_adposition=&gclid=5a0d2cbddcbe1d5cc26d4f96e24795f4&gclsrc=3p.ds&msclkid=5a0d2cbddcbe1d5cc26d4f96e24795f4">"Meta"</a> and began work on a new project known as the Metaverse. Of which many have mixed feelings about.
+        </p>
+
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/qs2W2e0ls_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 550px; max-height: 312;"></iframe>
+    </div>
+
+
+    <footer class="valign-wrapper">
+        <h5 style="color: #fa6a6a;">&copy; 2022 VR Consulting</h5>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left'
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {
+                edge: "right"
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+        });
+
+    </script>
+
 </body>

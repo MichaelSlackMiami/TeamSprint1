@@ -28,10 +28,9 @@
             display: inline;
             vertical-align: middle;
         }
-        
+
         #title {
             margin: 0px 150px 50px 150px;
-            
         }
 
     </style>
@@ -52,8 +51,8 @@
                 evt.returnValue = false;
             }
         }
-        
-        
+
+
         window.onload = function() {
             let images = document.getElementById("image_list").getElementsByTagName("a");
             for (i = 0; i < images.length; i++) {
@@ -98,39 +97,106 @@
         <li><a href="contact.html">Contact Us</a></li>
     </ul>
 
-    <!-- Image Swap -->
-    <h4 class="">Our Team</h4>
-    <p><img src="TeamSprint1-main/Images/about_images/34.jpg" width=30% height=50% alt="" id="image"> </p>
-    <ul id="image_list">
-        <li><a href="TeamSprint1-main/Images/about_images/34.jpg" title="Caitlin Dominski <br><br> Caitlin is a Freshman Emerging Technology in Business and Design Major at Miami University. Interests include graphic design, photography, and soccer. She hopes to pursue some sort of event planning, design or photography combination as a career." id="first_link">
-                <img src="TeamSprint1-main/Images/about_images/34.jpg" width=5% height=10% alt="">
-            </a></li>
-        <li><a href="TeamSprint1-main/Images/about_images/IMG_3543.jpeg" title="Jacob Shachter <br><br> Jacob is a Freshman Emerging Technology in Business and Design Major at Miami University. His interests include gaming, tennis, design, and spending time with friends. He hopes to pursue a career in User Interface Design after graduating.">
-                <img src="TeamSprint1-main/Images/about_images/IMG_3543.jpeg" width=5% height=10% alt="">
-            </a></li>
-        <li><a href="TeamSprint1-main/Images/about_images/image000000.jpg" title="Libby Schuchardt <br><br> Libby is a Freshman Games and Simulation Major at Miami University. Her interests include art, writing, video games, and singing. She plans to pursue writing for a big gaming company as a career." class="caption">
-                <img src="TeamSprint1-main/Images/about_images/image000000.jpg" width=5.65% height=10% alt="">
-            </a></li>
-        <li><a href="TeamSprint1-main/Images/about_images/IMG_1199.jpg" title="Matthew Furnee <br><br> Matthew is a Freshman Games and Simulation Major at Miami University. His interests include video games, dungeons and dragons, magic the gathering, and pretty much anything Japanese. He hopes to start an indie game company someday." class="caption">
-                <img src="TeamSprint1-main/Images/about_images/IMG_1199.jpg" width=5.65% height=10% alt="">
-            </a></li>
-        <li><a href="TeamSprint1-main/Images/about_images/IMG_5546.jpg" title="Michael Slack <br><br> Michael is a Freshman Games and Simulation Major with a Theater Minor at Miami University. His interests include theater, creative writing, and gaming. He hopes to pursue a career as either a game designer or a game writer after graduating." class="caption">
-                <img src="TeamSprint1-main/Images/about_images/IMG_5546.jpg" width=5.65% height=10% alt="">
-            </a></li>
+    <!-- section code referenced from Assignment 1 -->
+    <div class="container">
+        <h1>Our Team</h1>
+        <ul id="image_list">
+            <li><a href="Images/about_images/34.jpg" title="<h3>Caitlin Dominski</h3> <h5>Caitlin is a Freshman Emerging Technology in Business and Design Major at Miami University. Interests include graphic design, photography, and soccer. She hopes to pursue some sort of event planning, design or photography combination as a career.</h5>" id="first_link">
+                    <img src="Images/about_images/34.jpg" width=5% height=10% alt="">
+                </a></li>
+            <li><a href="Images/about_images/IMG_3543.jpg" title="<h3>Jacob Shachter</h3> <h5>Jacob is a Freshman Emerging Technology in Business and Design Major at Miami University. His interests include gaming, tennis, design, and spending time with friends. He hopes to pursue a career in User Interface Design after graduating.</h5>">
+                    <img src="Images/about_images/IMG_3543.jpg" width=5% height=10% alt="">
+                </a></li>
+            <li><a href="Images/about_images/image000000.jpg" title="<h3>Libby Schuchardt</h3> <h5>Libby is a Freshman Games and Simulation Major at Miami University. Her interests include art, writing, video games, and singing. She plans to pursue writing for a big gaming company as a career.</h5>" class="caption">
+                    <img src="Images/about_images/image000000.jpg" width=5.65% height=10% alt="">
+                </a></li>
+            <li><a href="Images/about_images/IMG_1199.jpg" title="<h3>Matthew Furnee</h3> <h5>Matthew is a Freshman Games and Simulation Major at Miami University. His interests include video games, dungeons and dragons, magic the gathering, and pretty much anything Japanese. He hopes to start an indie game company someday.</h5>" class="caption">
+                    <img src="Images/about_images/IMG_1199.jpg" width=5.65% height=10% alt="">
+                </a></li>
+            <li><a href="Images/about_images/IMG_5546.jpg" title="<h3>Michael Slack</h3> <h5>Michael is a Freshman Games and Simulation Major with a Theater Minor at Miami University. His interests include theater, creative writing, and gaming. He hopes to pursue a career as either a game designer or a game writer after graduating.</h5>" class="caption">
+                    <img src="Images/about_images/IMG_5546.jpg" width=5.65% height=10% alt="">
+                </a></li>
+        </ul>
 
-    </ul>
-    
-    
-        <h5 id="title">Caitlin Dominski <br><br> Caitlin is a Freshman Emerging Technology in Business and Design Major at Miami University. Interests include graphic design, photography, and soccer. She hopes to pursue some sort of event planning, design or photography combination as a career.</h5>
-        
-   
-<!-- more questions redirection -->
-    <article>
-        <p>More Questions? Refer to our <a href="contact.html">Contact Page</a></p>
-    </article>
+        <p><img src="Images/about_images/34.jpg" width=30% height=50% alt="" id="image"> </p>
+        <div id="title">
+            <h3>Caitlyn Dominski</h3><br>
+            <h5>Caitlin is a Freshman Emerging Technology in Business and Design Major at Miami University. Interests include graphic design, photography, and soccer. She hopes to pursue some sort of event planning, design or photography combination as a career.</h5>
+        </div>
+        <!-- <div class="row">
+            <div class="col s12 m6">
+                <h2>Caitlin Dominski</h2>
+                <p>Caitlin is a Freshman Emerging Technology in Business and Design Major at Miami University. Interests include graphic design, photography, and soccer. She hopes to pursue some sort of event planning, design or photography combination as a career.</p>
+            </div>
+            <div class="col s12 m6">
+                <img class="circle" src="Images/about_images/34.jpg" height="500px">
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col s12 m6">
+                <img class="circle" src="Images/about_images/IMG_3543.JPG" height="500px">
+            </div>
+            <div class="col s12 m6">
+                <h2>Jacob Shachter</h2>
+                <p>Jacob is a Freshman Emerging Technology in Business and Design Major at Miami University. His interests include gaming, tennis, design, and spending time with friends. He hopes to pursue a career in User Interface Design after graduating.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6">
+                <h2>Libby Schuchardt</h2>
+                <p>Libby is a Freshman Games and Simulation Major at Miami University. Her interests include art, writing, video games, and singing. She plans to pursue writing for a big gaming company as a career.</p>
+            </div>
+            <div class="col s12 m6">
+                <img class="circle" src="Images/about_images/image000000.jpg" height="500px">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6">
+                <img class="circle" src="Images/about_images/IMG_1199.jpg" height="500px">
+            </div>
+            <div class="col s12 m6">
+                <h2>Matthew Furnee</h2>
+                <p>Matthew is a Freshman Games and Simulation Major at Miami University. His interests include video games, dungeons and dragons, magic the gathering, and pretty much anything Japanese. He hopes to start an indie game company someday.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6">
+                <h2>Michael Slack</h2>
+                <p>Michael is a Freshman Games and Simulation Major with a Theater Minor at Miami University. His interests include theater, creative writing, and gaming. He hopes to pursue a career as either a game designer or a game writer after graduating.</p>
+            </div>
+            <div class="col s12 m6">
+                <img class="circle" src="Images/about_images/IMG_5546.JPG" height="500px">
+            </div>
+        </div> -->
+        <!-- more questions redirection -->
+        <article>
+            <p>More Questions? Refer to our <a href="contact.html">Contact Page</a></p>
+        </article>
+    </div>
     <!-- footer here -->
-    <footer>
-        &copy; 2022 VR Consulting
+    <footer class="valign-wrapper">
+        <h5 style="color: #fa6a6a;">&copy; 2022 VR Consulting</h5>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left'
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {
+                edge: "right"
+            });
+        });
+
+    </script>
+
 </body>
