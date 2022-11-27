@@ -6,7 +6,7 @@
 body 
 {
     text-align: center;
-    background-color: #a4bcf2;
+    background-color: #d4d4d4;
 }
 
 .container
@@ -37,12 +37,12 @@ label
 .navbar a
 {
     margin-left: 10px;
-    color: #fa6a6a;
+    color: #f8c900;
 }
 
 nav a:hover
 {
-    color: #0000ff;
+    color: #ff5800;
 }
 
 li
@@ -58,4 +58,9 @@ p
 h3
 {
     font-size: 1.75em;
+}
+
+footer
+{
+    padding-top: 5px;
 }
